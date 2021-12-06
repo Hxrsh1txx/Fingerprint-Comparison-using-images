@@ -14,12 +14,12 @@ import os
 #----------------------------------------------------------------------------------------------------------------------------------------------------
 # 2 =>
 # import the location of images and the image file in the system
-dataset_path =('X:/probsolving project/img')
-img_fingerprint = cv2.imread(os.path.join(dataset_path, 'X:/probsolving project/img/1.jpg'))
+dataset_path =('path or folder of the images')
+img_fingerprint = cv2.imread(os.path.join(dataset_path, 'image file location'))
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------
 # 3 =>
-# Convert from cv's BRG default color order to RGB.
+# Convert image colours from cv's default color order to RGB.
 # (colour conversion for easier identification)
 img_fingerprint = cv2.cvtColor(img_fingerprint, cv2.COLOR_BGR2RGB)
 
@@ -79,7 +79,7 @@ def draw_image_matches(detector, img1_name, img2_name, nmatches=10):
 # SIFT algorithm used to detect the different keypoints & features.
 # Plot the figure of the fingerprint.
 orb = cv2.ORB_create()
-draw_image_matches(orb, '1.jpg', '2.jpg')
+draw_image_matches(orb, 'image file 1', 'image file 2')
 
 sift = cv2.xfeatures2d.SIFT_create()
 kp, des = sift.detectAndCompute(img_fingerprint, None)
