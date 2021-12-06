@@ -18,12 +18,13 @@ ORB: Oriented fast & Rotated Brief. It is a part of OpenCV and is mostly used fo
 2.	Key point localization to identify the key points.
 3.	Ensuring that key points are rotation invariant.
 4.	Description for each key point.
-
 This is the diagram for the algorithm used for fingerprint comparison.
+
+
+
 ![image](https://user-images.githubusercontent.com/91388375/144934558-2b81d0fb-9203-42ee-b50c-7a813d839179.png)
 
 
- 
 
 
 == CODE DESCRIPTION == 
